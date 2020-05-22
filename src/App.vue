@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <AppHeader />
+
+    <AppForm />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import AppHeader from "./components/AppHeader.vue";
+import AppForm from "./components/AppForm.vue";
 
 export default {
-  name: "App",
   components: {
-    HelloWorld
+    AppHeader,
+    AppForm
   }
 };
 </script>
 
 <style>
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
